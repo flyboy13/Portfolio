@@ -1,18 +1,14 @@
 # Personal Portfolio
 
 My Personal Portfolio website made with Flutter 🍃🍒❤️
-
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](#)
-
-
-![Project Thumbnail](assets/images/thumbnails/portfolio_thumbnail.png)
+![Project Thumbnail]()
 
 ## 📑 Overview
 
 This is my personal portfolio website v1 built with Flutter - available for multiple platforms : website , android, ios and windows
 
+### 🗝️ Key Features:
 
-### 🗝️ Key Features: 
 - Home Page
 - Projects Page
 - Project Details Page
@@ -24,18 +20,8 @@ This is my personal portfolio website v1 built with Flutter - available for mult
 
 ### 🔗 Preview Links:
 
-- 🕸️ [Web Version: https://ye-lwin-oo.vercel.app](https://ye-lwin-oo.vercel.app)
-- 📱 [Mobile Version](http://u.pc.cd/oJ17)
+- 🕸️ [Web Version: not yet]()
 
 ### 🪪 Project License:
+
 This project is licensed under [BSD 3-Clause License](LICENSE).
-
-### Want a short preview?
-
-![Walkghrough video](assets/images/thumbnails/portfolio_peek.gif)
-
-
-Feel free to check it out and give it a ⭐ if you like it. 
-Follow me for more updates and more projects ...
-
-Copyright (©️) 2023 __YE LWIN OO__
