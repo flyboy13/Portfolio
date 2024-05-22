@@ -92,7 +92,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
       craftedWithText(),
       recentProjectsText(),
       verticalSpaceMedium,
-      ...ksShowcaseProjects
+      ...showcaseProjects
           .sublist(0, 3)
           .map(
             (project) => <Widget>[
@@ -112,7 +112,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
   Widget desktopVersion() {
     return <Widget>[
       <Widget>[
-        ...ksShowcaseProjects
+        ...showcaseProjects
             .sublist(0, 3)
             .map(
               (project) => projectImage(project),
@@ -138,7 +138,7 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
         ),
-        ...ksShowcaseProjects
+        ...showcaseProjects
             .sublist(0, 3)
             .map(
               (project) => projectDescriptionText(project),
@@ -194,13 +194,13 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
       descriptionStyle: context.adaptive(Theme.of(context).textTheme.bodySmall,
           Theme.of(context).textTheme.bodyMedium)!,
       description: project.shortDescription,
-      index: ksShowcaseProjects.indexOf(project),
+      index: showcaseProjects.indexOf(project),
       onPressed: () => navigateToProjectDetailsPage(project: project),
     );
   }
 
   Widget projectImage(ShowcaseProject project) {
-    int index = ksShowcaseProjects.indexOf(project);
+    int index = showcaseProjects.indexOf(project);
     return RoundedImageContainer(
       width: imageWidth,
       margin: s10,

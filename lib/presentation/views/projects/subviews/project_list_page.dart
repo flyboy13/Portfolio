@@ -213,7 +213,7 @@ class HorizontalProjectList extends StatelessWidget {
   Widget build(BuildContext context) {
     return <Widget>[
       ...List.generate(
-        ksShowcaseProjects.length,
+        showcaseProjects.length,
         (index) {
           double startAngle = s10;
           double endAngle = -s10;
@@ -228,7 +228,7 @@ class HorizontalProjectList extends StatelessWidget {
             startAngle: startAngle,
             endAngle: endAngle,
             index: index + 1,
-            project: ksShowcaseProjects[index],
+            project: showcaseProjects[index],
           );
         },
       ),

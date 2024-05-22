@@ -15,8 +15,8 @@ import 'package:justin/presentation/route/routes.dart';
 /// constant strings are prefixed with [ks]
 const String ksFontFamily = "ShantellSans";
 
-const String ksFlutterDeveloperAnd = "Flutter Developer &";
-const String ksAiMlEnthusiast = "Software Enthusiast";
+const String ksFlutterDeveloperAnd = "Software Developer &";
+const String ksAiMlEnthusiast = "AI/ML Enthusiast";
 const String ksAiEnthusiast = "ai enthusiast";
 const String ksTechNerd = "a  tech  nerd";
 const String ksFlutterDev = "flutter  dev";
@@ -32,7 +32,7 @@ const String ksIntro = """
 const String ksSeeMyWork = "See my work";
 const String ksBrowseProjects = "Browse My Projects";
 const String ksWhatElse =
-    "What else? I have freelanced on several side projects.";
+    "I'm a strong believer in teamwork, and I'm excited to collaborate with your team to achieve great things.";
 const String ksSayHello = "Just say Hello to collaborate!";
 const String ksHome = "Home";
 const String ksAbout = "About";
@@ -162,39 +162,6 @@ final List<Activity> ksActivityList = [
 
 final List<Experience> ksExperiences = [
   Experience(
-    company: "Simbolo Learning Platform",
-    position: "Flutter Instructor",
-    responsibilities: [
-      "Taught over 30 students (batch 1 & batch 2)",
-      "Taught basic Dart Programming Language",
-      "Taught basic Flutter Widgets",
-      "Taught Provider & GetX state managements",
-      "Taught Networking and Local Storage",
-      "Taught Clean Code Principles and 5 Design Patterns",
-    ],
-    startDate: DateTime(2023, 11),
-    endDate: DateTime.now(),
-  ),
-  Experience(
-    company: "AYA Inno Labs (AYA Bank)",
-    position: "Senior Flutter Developer",
-    responsibilities: [
-      "Software house of the second largest commercial bank in Myanamar",
-      "Closely collaborated with mobile developers, backend developers, UI/ UX designers and QA team for AYA Pay v3.0 Lite App",
-      """Mainly responsible for 
-        ● Project Architecture
-        ● Authentication flow,
-        ● OCR Scanning,
-        ● Third-party payments,
-        ● Vouchers, Deals & Rewards
-        ● Transaction history
-        """,
-      "Maintain AYA Pay Partner App used by tens of thousands of users",
-    ],
-    startDate: DateTime(2022, 9),
-    endDate: DateTime.now(),
-  ),
-  Experience(
     company: "AI Creative",
     position: "Frontend Developer",
     responsibilities: [
@@ -223,7 +190,7 @@ final List<Experience> ksExperiences = [
 final List<Certificate> ksCertificateList = [
   Certificate(
     name: "GraphQL Associate Certificate",
-    image: kaGraphQLCerti,
+    image: dart,
     link: "",
   ),
   Certificate(
@@ -241,11 +208,11 @@ final List<Certificate> ksCertificateList = [
     image: kaJSTCerti,
     link: "",
   ),
-  Certificate(
-    name: "TF SCALE Leadership Exchange Program",
-    image: kaTMESEKCerti,
-    link: "",
-  ),
+  // Certificate(
+  //   name: "TF SCALE Leadership Exchange Program",
+  //   image: kaTMESEKCerti,
+  //   link: "",
+  // ),
 ];
 
 const String _nikolaTesla = "Nikola Tesla";
@@ -390,29 +357,27 @@ const String _WINDOWS = 'Windows';
 const String _LINUX = 'Linux';
 const String _MAC = 'MacOs';
 const String _WEB = 'Web';
-final List<ShowcaseProject> ksShowcaseProjects = [
+final List<ShowcaseProject> showcaseProjects = [
   ShowcaseProject(
-    title: 'Pulse-X State Management',
-    image: kaPulseX,
-    shortDescription:
-        "Pulse-X is a state management library for Flutter projects.",
+    title: 'Travelove',
+    image: travelove,
+    shortDescription: "Plan, book, explore: Your all-in-one travel companion",
     description: """
-        Pulse-X is the state management for Flutter projects. It has four features:
-          - state management
-          - context-less routing
-          - dependency injection 
-          - reaction (side effects)
+       Travelove is a mobile app for traveler. It has four features:
+          - Book tour
+          - Favourite collection 
+          - Collect voucher
+          - AI chatbot
         """,
     link: ProjectInfo(
       icon: kiLink,
       label: "Project Links",
       isLink: true,
       contents: [
-        "https://pub.dev/packages/pulse_x",
-        "https://github.com/justin-Steve/pulse_x",
+        "https://play.google.com/store/apps/details?id=com.travelovecompany.travelove",
       ],
     ),
-    heroTag: 'pulse-x',
+    heroTag: 'App',
     tags: ProjectInfo(
       icon: kiTag,
       label: 'Tags',
@@ -421,295 +386,14 @@ final List<ShowcaseProject> ksShowcaseProjects = [
         'package',
         _FLUTTER.toLowerCase(),
         _DART.toLowerCase(),
-        'state management',
       ],
     ),
     tech: ProjectInfo(
       icon: kiChip,
-      label: 'Tools & Technologies',
+      label: 'Travel & Local',
       contents: [
         _FLUTTER.toUpperCase(),
         _DART.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _WINDOWS,
-        _LINUX,
-        _MAC,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Notee Personal Management App',
-    image: kaNotee,
-    shortDescription: "Notee is a personal management app built with Flutter",
-    description: """
-        Notee is a personal management app that includes four parts :
-          - Note taking
-          - To-Do List
-          - Timer
-          - Account Control
-        """,
-    link: ProjectInfo(
-        icon: kiLink,
-        label: "Project Links",
-        isLink: true,
-        contents: [
-          "https://github.com/justin-Steve/notee",
-        ]),
-    heroTag: 'notee',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'app',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-        'note',
-        'to-do',
-        'timer',
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _FLUTTER.toUpperCase(),
-        _DART.toUpperCase(),
-        _FIREBASE.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Threads Logo Animation',
-    image: kaThread,
-    shortDescription:
-        "Animated Facebook Threads App Logo made with custom paths and painters",
-    description: """
-        Here, I provide you with 4 things:
-          1. Two versions of animated threads logo - stroked thread logo and filled threads logo
-          2. Custom Gradient slider with gradient thumb
-          3. Custom Gradient Text
-          4. Custom Gradient Icon Button
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/justin-Steve/thread_logo_animation",
-      ],
-    ),
-    heroTag: 'threads_logo',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'animation',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'The Golden Land (Myanmar) ',
-    image: kaTheGoldenLand,
-    shortDescription:
-        "The Golden Land (Myanmar) is a website for showing Myanmar's Culture.",
-    description: """
-        An all-in-one website that you can explore Myanmar's Traditions
-        
-        This is the web project showing the Culture, Cuisine, Festivals, Famous Places, Ethnic Groups and Handicrafts in Myanmar.
-        Some of the data may be inaccurate because I collect most of my data on the Internet.
-        """,
-    link: ProjectInfo(
-        icon: kiLink,
-        label: "Project Links",
-        isLink: true,
-        contents: [
-          "https://the-golden-land.vercel.app/",
-          "https://github.com/justin-Steve/TheGoldenLand",
-        ]),
-    heroTag: 'the-golden-land',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'website',
-        _HTML.toLowerCase(),
-        _CSS.toLowerCase(),
-        _JAVASCRIPT.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _HTML.toUpperCase(),
-        _CSS.toUpperCase(),
-        _JAVASCRIPT.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Pretty Animated Buttons',
-    image: kaAnimatedButtons,
-    shortDescription:
-        "A collection of ready-to-use smoothly animated pretty buttons written in Flutter",
-    description: """
-        Pretty Animated Buttons is a package for a collection of beautiful animated buttons which are highly customizable too.
-        Currently, a total of 12 animated buttons are available. More fancy buttons are coming soon...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://pub.dev/packages/pretty_animated_buttons",
-        "https://github.com/justin-Steve/pretty_animated_buttons",
-      ],
-    ),
-    heroTag: 'pretty_animated_buttons',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'package',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-        'animation',
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _FLUTTER.toUpperCase(),
-        _DART.toUpperCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [
-        _ANDROID,
-        _IOS,
-        _LINUX,
-        _MAC,
-        _WEB,
-      ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'Flappy Ironman',
-    image: kaIronMan,
-    shortDescription: "Flappy Ironman game inspired by Flappy Bird Game",
-    description: """
-        This is Flappy Ironman game inspired by Flappy Bird Game. 
-        No external game engine packages are used.
-        Written in Flutter ...
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/justin-Steve/FlappyIronman",
-      ],
-    ),
-    heroTag: 'flappy_ironman',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: [
-        'game',
-        _FLUTTER.toLowerCase(),
-        _DART.toLowerCase(),
-      ],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _DART.toUpperCase(),
-        _FLUTTER.toUpperCase(),
       ],
     ),
     author: ProjectInfo(
@@ -731,17 +415,16 @@ final List<ShowcaseProject> ksShowcaseProjects = [
   ShowcaseProject(
     title: 'AI Chat Bot',
     image: kaAIChatBot,
-    shortDescription: "AI chat bot using Flutter and Dialogflow.",
+    shortDescription: "AI chat bot using Flutter and backend Python",
     description: """
-        AI chat bot using Flutter and Dialogflow.
-        ⚠️ Dialogflow key is now expired so it won't work no more ...
+        AI chat bot using Flutter and call api from backend.
         """,
     link: ProjectInfo(
       icon: kiLink,
       label: "Project Links",
       isLink: true,
       contents: [
-        "https://github.com/justin-Steve/AIChatbot",
+        "",
       ],
     ),
     heroTag: 'ai_chat_bot',
@@ -776,50 +459,8 @@ final List<ShowcaseProject> ksShowcaseProjects = [
       contents: [
         _ANDROID,
         _IOS,
+        _WINDOWS,
       ],
-    ),
-  ),
-  ShowcaseProject(
-    title: 'GraphQL Notes',
-    image: kaGraphQLNotes,
-    shortDescription: "My Apollo graphQL Associate Certified Developer path",
-    description: """
-       My Apollo graphQL Associate Certified Developer path coding practice notes
-       All of these notes are available at Apollo GraphQL Tutorials
-        """,
-    link: ProjectInfo(
-      icon: kiLink,
-      label: "Project Links",
-      isLink: true,
-      contents: [
-        "https://github.com/justin-Steve/graphql-associate-dev",
-      ],
-    ),
-    heroTag: 'graphql_notes',
-    tags: ProjectInfo(
-      icon: kiTag,
-      label: 'Tags',
-      isTag: true,
-      contents: ['GraphQL', 'note'],
-    ),
-    tech: ProjectInfo(
-      icon: kiChip,
-      label: 'Tools & Technologies',
-      contents: [
-        _GRAPHQL.toLowerCase(),
-      ],
-    ),
-    author: ProjectInfo(
-      icon: kiPerson,
-      label: 'Developer',
-      contents: [
-        _ME,
-      ],
-    ),
-    platform: ProjectInfo(
-      icon: kiLaptop,
-      label: 'Available Platforms',
-      contents: [],
     ),
   ),
   ShowcaseProject(

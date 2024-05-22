@@ -17,7 +17,7 @@ const String kaCoffee = "$basePath$mePath/coffee.svg";
 
 /// project images
 const String projectPath = "/projects";
-const String kaPulseX = "$basePath$projectPath/pulse_x.png";
+const String travelove = "$basePath$projectPath/travelove.png";
 const String kaThread = "$basePath$projectPath/thread.png";
 const String kaNotee = "$basePath$projectPath/notee.png";
 const String kaTheGoldenLand = "$basePath$projectPath/the_golden_land.png";
@@ -25,7 +25,7 @@ const String kaAnimatedButtons = "$basePath$projectPath/animated_buttons.png";
 const String kaAIChatBot = "$basePath$projectPath/ai_chat_bot.png";
 const String kaGraphQLNotes = "$basePath$projectPath/graphql_notes.png";
 const String kaIronMan = "$basePath$projectPath/iron_man.png";
-const String kaDesignPatterns = "$basePath$projectPath/design_patterns.png";
+const String kaDesignPatterns = "$basePath$projectPath/chatbotDark.png";
 
 /// my tools
 const String toolsPath = "/tools";
@@ -44,13 +44,10 @@ const List<String> kaTools = [
 
 /// certificates
 const String certificatePath = "/certificates";
-const String kaGraphQLCerti = "$basePath$certificatePath/graphql.jpg";
-const String kaDeepLearningCerti =
-    "$basePath$certificatePath/deep_learning.jpg";
-const String kaPythonCerti =
-    "$basePath$certificatePath/intermediate_python.jpg";
-const String kaJSTCerti = "$basePath$certificatePath/jst_japan_asia.jpg";
-const String kaTMESEKCerti = "$basePath$certificatePath/tmesek.jpg";
+const String dart = "$basePath$certificatePath/dart.jpg";
+const String kaDeepLearningCerti = "$basePath$certificatePath/aws.png";
+const String kaPythonCerti = "$basePath$certificatePath/front_end .jpg";
+const String kaJSTCerti = "$basePath$certificatePath/imp.png";
 
 /// van gogh artworks which are downloaded from https://wikiart.com
 const String vanGoghPath = "/van_gogh";

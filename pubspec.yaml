@@ -68,24 +68,24 @@ flutter:
         - asset: assets/fonts/poppins/Poppins-Black.ttf
           weight: 900
 
-    - family: ShantellSans
+    - family: ceraroundpro
       fonts:
-        - asset: assets/fonts/shantell_sans/ShantellSans-Regular.ttf
-        - asset: assets/fonts/shantell_sans/ShantellSans-Italic.ttf
-          style: italic
-        - asset: assets/fonts/shantell_sans/ShantellSans-Light.ttf
+        - asset: assets/fonts/alternative/ceraroundpro-regular.otf
+        # - asset: assets/fonts/alternative/ceraroundpro-Italic.otf
+        #   style: italic
+        - asset: assets/fonts/alternative/ceraroundpro-light.otf
           weight: 100
-        - asset: assets/fonts/shantell_sans/ShantellSans-Light.ttf
+        - asset: assets/fonts/alternative/ceraroundpro-light.otf
           weight: 200
-        - asset: assets/fonts/shantell_sans/ShantellSans-Medium.ttf
+        - asset: assets/fonts/alternative/ceraroundpro-medium.otf
           weight: 400
-        - asset: assets/fonts/shantell_sans/ShantellSans-Regular.ttf
-          weight: 500
-        - asset: assets/fonts/shantell_sans/ShantellSans-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/shantell_sans/ShantellSans-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/shantell_sans/ShantellSans-ExtraBold.ttf
+        - asset: assets/fonts/alternative/ceraroundpro-regular.otf
           weight: 800
-        - asset: assets/fonts/shantell_sans/ShantellSans-ExtraBold.ttf
-          weight: 900
+        # - asset: assets/fonts/alternative/ceraroundpro-SemiBold.otf
+        #   weight: 600
+        - asset: assets/fonts/alternative/ceraroundpro-bold.otf
+          weight: 700
+        # - asset: assets/fonts/alternative/ceraroundpro-ExtraBold.otf
+        #   weight: 800
+        # - asset: assets/fonts/alternative/ceraroundpro-ExtraBold.otf
+        #   weight: 900
