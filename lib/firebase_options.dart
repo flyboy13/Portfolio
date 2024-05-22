@@ -21,25 +21,16 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -53,12 +44,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDa15xN1k-ILLmXmoLs-z_4cupBC2hMAgE',
-    appId: '1:151323406092:web:57c07869722ca345fe6329',
-    messagingSenderId: '151323406092',
-    projectId: 'potfolio-9a215',
-    authDomain: 'potfolio-9a215.firebaseapp.com',
-    storageBucket: 'potfolio-9a215.appspot.com',
-    measurementId: 'G-GL28284E6P',
+    apiKey: 'AIzaSyD_AwWB6Y2S1h9zlAojwmIbn2jLiewvkcA',
+    appId: '1:706570566853:web:a29988e7503d94ca8b44ac',
+    messagingSenderId: '706570566853',
+    projectId: 'portfolio-flyboy',
+    authDomain: 'portfolio-flyboy.firebaseapp.com',
+    databaseURL: 'https://portfolio-flyboy-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'portfolio-flyboy.appspot.com',
+    measurementId: 'G-RF84WQ9HEX',
   );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCNpjrRWlql_8WTwZrQOIc2Oj2GBlxs_PE',
+    appId: '1:706570566853:ios:49ac7d4e9ea521298b44ac',
+    messagingSenderId: '706570566853',
+    projectId: 'portfolio-flyboy',
+    databaseURL: 'https://portfolio-flyboy-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'portfolio-flyboy.appspot.com',
+    iosBundleId: 'com.example.yelwinoo',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyAM_086IjQtcJBTnZSztiu41Iw2TOAt6m8',
+    appId: '1:706570566853:android:c7aaee1c918b3b118b44ac',
+    messagingSenderId: '706570566853',
+    projectId: 'portfolio-flyboy',
+    databaseURL: 'https://portfolio-flyboy-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'portfolio-flyboy.appspot.com',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyD_AwWB6Y2S1h9zlAojwmIbn2jLiewvkcA',
+    appId: '1:706570566853:web:5b95a2439e616e008b44ac',
+    messagingSenderId: '706570566853',
+    projectId: 'portfolio-flyboy',
+    authDomain: 'portfolio-flyboy.firebaseapp.com',
+    databaseURL: 'https://portfolio-flyboy-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'portfolio-flyboy.appspot.com',
+    measurementId: 'G-M1P16XHK96',
+  );
+
 }

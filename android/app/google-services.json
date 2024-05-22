@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "706570566853",
+    "firebase_url": "https://portfolio-flyboy-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "portfolio-flyboy",
+    "storage_bucket": "portfolio-flyboy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706570566853:android:c7aaee1c918b3b118b44ac",
+        "android_client_info": {
+          "package_name": "com.example.yelwinoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM_086IjQtcJBTnZSztiu41Iw2TOAt6m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
