@@ -48,16 +48,25 @@ class AnimatedCertificateImage extends AnimatedWidget {
     return GestureDetector(
       onTap: () => showCertificateDialog(context),
       child: <Widget>[
-        ClipRRect(
-          borderRadius: BorderRadius.circular(s14),
-          child: Image.asset(
-            certificate.image,
-            fit: BoxFit.cover,
-            width: double.maxFinite,
-            height: double.maxFinite,
+        Container(
+          margin: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(s14),
+            border: Border.all(
+                color: Colors.black,
+                width: 2.0), // Adjust color and width as needed
           ),
-        ).addOpacity(
-          opacity: opacityAnimation.value,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(s14),
+            child: Image.asset(
+              certificate.image,
+              fit: BoxFit.cover,
+              width: double.maxFinite,
+              height: double.maxFinite,
+            ),
+          ).addOpacity(
+            opacity: opacityAnimation.value,
+          ),
         ),
         IconButton(
           onPressed: () => showCertificateDialog(context),

@@ -28,10 +28,12 @@ class _HomePageState extends State<HomePage>
       IntroductionPage(
         onTapSeeMyWorks: _onTapSeeMyWorks,
       ),
+      
       const ShowcaseProjectsPage(),
       const FooterPage(),
     ];
   }
+  
 
   @override
   void dispose() {

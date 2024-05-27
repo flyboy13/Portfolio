@@ -7,7 +7,7 @@ export './logo.dart';
 export './menu_button.dart';
 export './menu_item.dart';
 export './custom_slider.dart';
-export './vangogh_image.dart';
+export 'menu_image.dart';
 export '../views/home/footer_page.dart';
 export './rounded_image_container.dart';
 export './custom_page_transition.dart';

@@ -3,8 +3,8 @@ import 'package:justin/presentation/utils/extensions/extensions.dart';
 
 import '../configs/configs.dart';
 
-class VanGoghImage extends StatelessWidget {
-  VanGoghImage({
+class MenuImage extends StatelessWidget {
+  MenuImage({
     Key? key,
     required this.hoveredIndex,
     required this.animation,
@@ -62,7 +62,7 @@ class VanGoghImage extends StatelessWidget {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: images[hoveredIndex].image,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),

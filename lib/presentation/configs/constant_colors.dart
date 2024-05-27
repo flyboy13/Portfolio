@@ -29,9 +29,9 @@ final Color indigo100 = Colors.indigo.shade100;
 
 List<Color> kMenuColors = [
   secondary,
-  green100,
-  blossom,
   yellow300,
+  blossom,
+  const Color.fromARGB(255, 255, 109, 99),
   black26,
   indigo100,
 ];

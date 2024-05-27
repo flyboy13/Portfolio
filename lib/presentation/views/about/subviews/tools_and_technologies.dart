@@ -94,11 +94,8 @@ class ToolsAndTechnologies extends StatelessWidget {
               ),
               verticalSpaceLarge,
               <Widget>[
-                ksWebTech
-                    .map((tech) => Text(tech))
-                    .toList()
-                    .addColumn()
-                    .addExpanded(),
+                ksWebTech.map((tech) => Text(tech)).toList().addColumn(),
+                // .addExpanded(),
                 ksOtherTech
                     .map((tech) => Text(tech))
                     .toList()
@@ -124,7 +121,7 @@ class ToolsAndTechnologies extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
             )
             .addPadding(
-              edgeInsets: context.symmetricPercentPadding(hPercent: s8),
+              edgeInsets: context.symmetricPercentPadding(hPercent: s4),
             ),
         animation: techController,
         slidePosition: SlidePosition.bottom,

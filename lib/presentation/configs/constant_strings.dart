@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names
+// ignore_for_file: constant_identifier_names, unused_element
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:justin/data/model/activity.dart';
@@ -70,17 +70,17 @@ const String ksBuildUsing = "Build using ";
 const String ksWithMuch = " with much ";
 const String ksCC = "©️ 2024 Nguyen Duc Tai";
 const String ksYoung = "When I was young, I was a kid!";
-const String ksNobody = "I'm NOBODY";
+const String name = "I'm Nguyen Duc Tai";
 const String ksSpecialization =
     "I specialize in Mobile Technologies and highly passionate about developing quality applications, open-source works and AI.";
 const String ksWhoAmI = 'Who Am I?';
 const String ksWhatILove = "What I Love To Do";
 const String ksBriefAboutMe =
-    "Hi! I'm a Front-end Software Engineer who is passionate about emerging Technologies and AI. I have fairly extensive amount of experience in developing high quality applications. I often work on freelance projects.";
+    "Hi! I'm a Front-end Software Engineer who is passionate about emerging Technologies and AI. I have fairly extensive amount of experience in developing high quality applications.";
 const String ksMyLife =
     "I was a final year student from the Ho Chi Minh Univercity of Sciencne. ";
 const String ksProfession =
-    "I started working as a Flutter Developer since 2022. Later, I fell in love with it. I'm eager to contribute in Flutter community. Recently, I've published my first state management package: Pulse-X and animated button library: Pretty Animated Buttons.";
+    "I started working as a Flutter Developer since 2022. Later, I fell in love with it. I'm eager to contribute in Flutter community.";
 
 const String ksMyTools =
     "I use a bunch of tools and technologies to make design and implementation process easier such as \n + Adobe Photoshop \n + Adobe Illustator \n + Figma \n + Canva \n + Cap cut \n ";
@@ -111,8 +111,8 @@ const String ksCoding = "Software Engineering";
 const String ksCodingMobile = "Software\nEngineering";
 const String ksCoffee = "Coffee";
 const String ksReading = "Reading";
-const String ksMusic = "80's,90's Music";
-const String ksMusicMobile = "80's,90's\nMusic";
+const String ksMusic = "EDM Music";
+const String ksMusicMobile = "EDM\nMusic";
 const String ksMovie = "Movies";
 const String ksExplore = "Exploring more...";
 const String ksExploreMobile = "Exploring\nmore...";
@@ -136,28 +136,28 @@ const String ksAwardDetails = """
 """;
 const String ksActivities = "Activities I've joined";
 final List<Activity> ksActivityList = [
-  Activity(
-    title: ksAward,
-    name: ksAwardName,
-    icon: kiTrophy,
-    details: ksAwardDetails,
-    link: ksAwardLink,
-  ),
-  Activity(
-    title: ksActivities,
-    name:
-        "TFI SCALE Program (Temasek Foundation International Specialists' Community Action andLeadership Exchange Program - Singapore)",
-    icon: kiActivity,
-    details:
-        "This is a five-week Exchange Program with Singapore Polytechnic ( 3-weeks in Singapore and 2-weeks in Myanmar Learnt data analytics, design thinking and co-operation skills and applied them on the Coffee Farm Project",
-  ),
-  Activity(
-    name:
-        "JST Japan-Asia Youth Program (Sakura Science Exchange Program - Japan)",
-    icon: kiActivity,
-    details:
-        "This is a 9-days Exchange Program at Miyakonojo College, Miyazaki, Japan\nLearnt basic IOT and made the POINT Traffic Control System ( Traffic lights control system with extended functionalities such as alerts when driver recklessly drive while red light is on )",
-  ),
+  // Activity(
+  //   title: ksAward,
+  //   name: ksAwardName,
+  //   icon: kiTrophy,
+  //   details: ksAwardDetails,
+  //   link: ksAwardLink,
+  // ),
+  // Activity(
+  //   title: ksActivities,
+  //   name:
+  //       "TFI SCALE Program (Temasek Foundation International Specialists' Community Action andLeadership Exchange Program - Singapore)",
+  //   icon: kiActivity,
+  //   details:
+  //       "This is a five-week Exchange Program with Singapore Polytechnic ( 3-weeks in Singapore and 2-weeks in Myanmar Learnt data analytics, design thinking and co-operation skills and applied them on the Coffee Farm Project",
+  // ),
+  // Activity(
+  //   name:
+  //       "JST Japan-Asia Youth Program (Sakura Science Exchange Program - Japan)",
+  //   icon: kiActivity,
+  //   details:
+  //       "This is a 9-days Exchange Program at Miyakonojo College, Miyazaki, Japan\nLearnt basic IOT and made the POINT Traffic Control System ( Traffic lights control system with extended functionalities such as alerts when driver recklessly drive while red light is on )",
+  // ),
 ];
 
 final List<Experience> ksExperiences = [
@@ -189,23 +189,26 @@ final List<Experience> ksExperiences = [
 
 final List<Certificate> ksCertificateList = [
   Certificate(
-    name: "GraphQL Associate Certificate",
-    image: dart,
-    link: "",
+    name: "Flutter & Dart - The Complete Guide [2024 edition]",
+    image: dartCer,
+    link:
+        "https://www.udemy.com/certificate/UC-f6e6b63c-fd4d-44ae-be34-f6eb26970f0b/",
   ),
   Certificate(
-    name: "Deep Learning Specialization (Coursera)",
-    image: kaDeepLearningCerti,
-    link: "",
+    name: "AWS Certificate",
+    image: awsCer,
+    link:
+        "https://www.credly.com/badges/7bfeb2bd-1863-405a-ac6d-f7bee6c18d00/linked_in_profile",
   ),
   Certificate(
-    name: "Intermediate Python (DataCamp)",
-    image: kaPythonCerti,
-    link: "",
+    name: "The Complete Front-End Web ",
+    image: frontendCer,
+    link:
+        "https://www.udemy.com/certificate/UC-85eccfb8-5e27-42b4-b430-8f036ba84bb7/",
   ),
   Certificate(
-    name: "JST Japan-Asia Youth Exchange Program",
-    image: kaJSTCerti,
+    name: "Impossible Certificate",
+    image: startupCer,
     link: "",
   ),
   // Certificate(
@@ -367,7 +370,7 @@ final List<ShowcaseProject> showcaseProjects = [
           - Book tour
           - Favourite collection 
           - Collect voucher
-          - AI chatbot
+          - AI chatbot to suggest tour and get information
         """,
     link: ProjectInfo(
       icon: kiLink,
@@ -399,9 +402,7 @@ final List<ShowcaseProject> showcaseProjects = [
     author: ProjectInfo(
       icon: kiPerson,
       label: 'Developer',
-      contents: [
-        _ME,
-      ],
+      contents: [_ME, "Le Thua Phuong Cat"],
     ),
     platform: ProjectInfo(
       icon: kiLaptop,

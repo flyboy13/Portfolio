@@ -2,7 +2,7 @@ name: justin
 description: My Portfolio website made with Flutter
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.1.0+1
 
 environment:
   sdk: ">=2.19.0 <3.5.0"
@@ -41,7 +41,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/personal/
-    - assets/images/van_gogh/
+    - assets/images/animation/
     - assets/images/projects/
     - assets/images/certificates/
     - assets/images/tools/

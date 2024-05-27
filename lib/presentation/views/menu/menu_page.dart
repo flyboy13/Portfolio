@@ -39,7 +39,9 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
   late double _menuItemHeight;
   final List<Image> _vanGoghImages = List.generate(
     kaMenu.length,
-    (index) => Image.asset(kaMenu[index]),
+    (index) => Image(
+      image: AssetImage(kaMenu[index]),
+    ),
   );
   int currentHoverIndex = -2;
 
@@ -57,18 +59,18 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
     }
   }
 
-  void _precacheImages() {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      for (Image vanGoghImage in _vanGoghImages) {
-        precacheImage(vanGoghImage.image, context);
-      }
-    });
-  }
+  // void _precacheImages() {
+  //   WidgetsBinding.instance.addPostFrameCallback((_) {
+  //     for (AssetImage. vanGoghImage in _vanGoghImages) {
+  //       precacheImage(vanGoghImage, context);
+  //     }
+  //   });
+  // }
 
   @override
   void initState() {
     super.initState();
-    _precacheImages();
+    // _precacheImages();
 
     _boxController = AnimationController(
       duration: duration100,
@@ -133,7 +135,7 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
           Visibility(
             visible:
                 currentHoverIndex > -1 && currentHoverIndex < ksMenu.length,
-            child: VanGoghImage(
+            child: MenuImage(
               hoveredIndex: currentHoverIndex,
               animation: _boxController.view,
               coloredBoxAnimation: _colorBoxController.view,

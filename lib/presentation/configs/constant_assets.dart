@@ -44,26 +44,26 @@ const List<String> kaTools = [
 
 /// certificates
 const String certificatePath = "/certificates";
-const String dart = "$basePath$certificatePath/dart.jpg";
-const String kaDeepLearningCerti = "$basePath$certificatePath/aws.png";
-const String kaPythonCerti = "$basePath$certificatePath/front_end .jpg";
-const String kaJSTCerti = "$basePath$certificatePath/imp.png";
+const String dartCer = "$basePath$certificatePath/dart.jpg";
+const String awsCer = "$basePath$certificatePath/aws.png";
+const String frontendCer = "$basePath$certificatePath/front_end .jpg";
+const String startupCer = "$basePath$certificatePath/imp.png";
 
 /// van gogh artworks which are downloaded from https://wikiart.com
-const String vanGoghPath = "/van_gogh";
+const String animation = "/animation";
 
-const String kaStarryNight = "$basePath$vanGoghPath/the-starry-night.jpg";
-const String kaIrises = "$basePath$vanGoghPath/irises.jpg";
-const String kaBlossom = "$basePath$vanGoghPath/blossom.jpg";
-const String kaHarvest = "$basePath$vanGoghPath/the-harvest.jpg";
-const String kaPotatoEaters = "$basePath$vanGoghPath/the-potato-eaters.jpg";
-const String kaCypress = "$basePath$vanGoghPath/wheat-field-with-cypresses.jpg";
+const String home = "$basePath$animation/house.gif";
+const String projects = "$basePath$animation/portfolio.gif";
+const String experience = "$basePath$animation/rating.gif";
+const String certificate = "$basePath$animation/review.gif";
+const String about = "$basePath$animation/happy.gif";
+const String contact = "$basePath$animation/phone-contact.gif";
 
 const kaMenu = [
-  kaStarryNight,
-  kaIrises,
-  kaBlossom,
-  kaHarvest,
-  kaPotatoEaters,
-  kaCypress,
+  home,
+  projects,
+  experience,
+  certificate,
+  about,
+  contact,
 ];

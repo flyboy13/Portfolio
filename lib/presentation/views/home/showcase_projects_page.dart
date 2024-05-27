@@ -112,6 +112,16 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
   Widget desktopVersion() {
     return <Widget>[
       <Widget>[
+        craftedWithText(),
+        <Widget>[
+          recentProjectsText(),
+        ].addColumn(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        const SizedBox(
+          height: s50,
+        ),
         ...showcaseProjects
             .sublist(0, 3)
             .map(
@@ -131,17 +141,14 @@ class _ShowcaseProjectsPageState extends State<ShowcaseProjectsPage>
           )
           .addExpanded(),
       <Widget>[
-        <Widget>[
-          craftedWithText(),
-          recentProjectsText(),
-        ].addColumn(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        const SizedBox(
+          height: s50,
         ),
         ...showcaseProjects
             .sublist(0, 3)
             .map(
-              (project) => projectDescriptionText(project),
+              (project) => projectDescriptionText(project).addPadding(
+                  edgeInsets: const EdgeInsets.fromLTRB(0, s70, 0, s0)),
             )
             .toList(),
       ]

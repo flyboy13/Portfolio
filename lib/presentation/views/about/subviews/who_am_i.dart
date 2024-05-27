@@ -114,7 +114,7 @@ class _WhoAmIState extends State<WhoAmI> with TickerProviderStateMixin {
         top: context.percentHeight(s10),
         right: context.percentWidth(s8),
         child: OutlinedText(
-          text: ksNobody,
+          text: name,
           strokeWidth: s1,
           fontSize: s20,
           strokeColor: secondary.withOpacity(0.3),
@@ -141,11 +141,8 @@ class _WhoAmIState extends State<WhoAmI> with TickerProviderStateMixin {
             bottom: s0,
             left: s0,
             right: s0,
-            child: AspectRatio(
-              aspectRatio: 12 / 9,
-              child: Image(
-                image: myPicture.image,
-              ),
+            child: Image(
+              image: myPicture.image,
             ),
           ),
           Positioned(
@@ -207,12 +204,13 @@ class _WhoAmIState extends State<WhoAmI> with TickerProviderStateMixin {
           stickController: _stickController!,
         ),
       ),
+     
       Positioned(
         top: context.percentHeight(s10),
         right: context.percentWidth(s8),
         child: const OutlinedText(
-          text: ksNobody,
-          fontSize: s100,
+          text: name,
+          fontSize: s70,
           strokeColor: secondary,
           textColor: transparent,
           fontWeight: FontWeight.w900,
@@ -227,12 +225,9 @@ class _WhoAmIState extends State<WhoAmI> with TickerProviderStateMixin {
         ].addRow(),
       ),
       <Widget>[
-        AspectRatio(
-          aspectRatio: 1,
-          child: Image(
-            image: myPicture.image,
-            height: context.percentHeight(s50),
-          ),
+        Image(
+          image: myPicture.image,
+          height: context.percentHeight(s80),
         ),
         Positioned(
           left: s0,
@@ -265,12 +260,12 @@ class _WhoAmIState extends State<WhoAmI> with TickerProviderStateMixin {
             alignment: Alignment.bottomCenter,
           )
           .addSizedBox(
-            width: context.percentWidth(s30),
+            width: context.percentWidth(s38),
             height: context.screenHeight,
           )
           .addPadding(
               edgeInsets: context.percentPadding(
-            r: s6,
+            r: s2,
           ))
           .addAlign(
             alignment: Alignment.centerRight,
