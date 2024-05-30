@@ -425,7 +425,7 @@ final List<ShowcaseProject> showcaseProjects = [
       label: "Project Links",
       isLink: true,
       contents: [
-        "",
+        "https://github.com/flyboy13/Flutter-AI",
       ],
     ),
     heroTag: 'ai_chat_bot',
@@ -465,21 +465,18 @@ final List<ShowcaseProject> showcaseProjects = [
     ),
   ),
   ShowcaseProject(
-    title: 'Design Patterns',
+    title: 'Animation Portfolio',
     image: kaDesignPatterns,
-    shortDescription:
-        "Design patterns usage with simple examples written in Dart",
+    shortDescription: "Smooth Animation to present your works and projects",
     description: """
-        Design patterns usage with simple examples written in Dart
-        Currently, not all design patterns are available yet.
-        Still developing ...
+        Smooth Animation to present your works and projects. Impress your Recruitment
         """,
     link: ProjectInfo(
       icon: kiLink,
       label: "Project Links",
       isLink: true,
       contents: [
-        "https://github.com/justin-Steve/design_patterns",
+        "https://github.com/flyboy13/Portfolio",
       ],
     ),
     heroTag: 'design_patterns',
@@ -488,7 +485,7 @@ final List<ShowcaseProject> showcaseProjects = [
       label: 'Tags',
       isTag: true,
       contents: [
-        'design_patterns',
+        'Portfolio',
         _DART.toLowerCase(),
       ],
     ),
@@ -509,7 +506,7 @@ final List<ShowcaseProject> showcaseProjects = [
     platform: ProjectInfo(
       icon: kiLaptop,
       label: 'Available Platforms',
-      contents: [],
+      contents: [_WEB],
     ),
   ),
 ];

@@ -22,10 +22,10 @@ const String kaThread = "$basePath$projectPath/thread.png";
 const String kaNotee = "$basePath$projectPath/notee.png";
 const String kaTheGoldenLand = "$basePath$projectPath/the_golden_land.png";
 const String kaAnimatedButtons = "$basePath$projectPath/animated_buttons.png";
-const String kaAIChatBot = "$basePath$projectPath/ai_chat_bot.png";
+const String kaAIChatBot = "$basePath$projectPath/chatbotDark.png";
 const String kaGraphQLNotes = "$basePath$projectPath/graphql_notes.png";
 const String kaIronMan = "$basePath$projectPath/iron_man.png";
-const String kaDesignPatterns = "$basePath$projectPath/chatbotDark.png";
+const String kaDesignPatterns = "$basePath$projectPath/portfolio.png";
 
 /// my tools
 const String toolsPath = "/tools";
